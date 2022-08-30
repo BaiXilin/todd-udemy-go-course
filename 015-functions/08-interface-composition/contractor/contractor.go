@@ -25,7 +25,7 @@ func (Contractor) Unfasten(p tools.NailPuller, nailSupply *int, b *tools.Board) 
 }
 
 func (c Contractor) ProcessBoards(dp tools.NailDriverPuller, nailSupply *int, boards []tools.Board) {
-	for i, _ := range boards {
+	for i := range boards {
 		b := &boards[i]
 
 		fmt.Printf("Contractor: examine board #%d: %+v\n", i+i, b)
